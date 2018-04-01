@@ -23,6 +23,7 @@ from keras.callbacks import TensorBoard
 from SSD_tester import calc_detection_prec_rec, calc_detection_ap
 from keras.backend.tensorflow_backend import set_session
 from depth_preprocess import hole_filling
+import argparse
 
 config = tf.ConfigProto(
     gpu_options=tf.GPUOptions(
@@ -31,6 +32,12 @@ config = tf.ConfigProto(
     )
 )
 set_session(tf.Session(config=config))
+
+seed = 7
+np.random.seed(seed)
+parser = argparse.ArgumentParser(description='indicate a version number')
+parser.add_argument('--ver', type=int)
+args = parser.parse_args()
 
 voc_classes = ['bathtub', 'bed', 'bookshelf', 'box', 'chair', 'counter', 'desk', 'door', 'dresser',
                'garbage_bin', 'lamp', 'monitor', 'night_stand', 'pillow', 'sink', 'sofa', 'table', 'tv', 'toilet']
@@ -43,7 +50,6 @@ priors = pickle.load(open('../pkls/prior_boxes_ssd300.pkl', 'rb'))
 bbox_util = BBoxUtility(NUM_CLASSES, priors)
 
 rgb_gt = pickle.load(open('../pkls/SUNRGBD/RGB_v8.pkl', 'rb'))
-depth_gt = pickle.load(open('../pkls/SUNRGBD/Depth_v8.pkl', 'rb'))
 rgb_keys = sorted(rgb_gt.keys())
 depth_keys = sorted(depth_gt.keys())
 shuffle(rgb_keys)
@@ -56,6 +62,37 @@ rgb_val_keys = rgb_keys[num_train:]
 rgb_val_keys = rgb_val_keys[:num_val]
 depth_val_keys = depth_keys[num_train:]
 depth_val_keys = depth_val_keys[:num_val]
+
+rgb_gt = pickle.load(open('../pkls/RGB.pkl', 'rb'))
+depth_gt = pickle.load(open('../pkls/SUNRGBD/depth.pkl', 'rb'))
+
+rgb_keys = sorted(rgb_gt.keys())
+depth_keys = sorted(depth_gt.keys())
+rgb_keys = np.array(rgb_keys)
+depth_keys = np,array(depth_leys)
+
+perm = np.random.permutation(len(rgb_keys))
+split = np.split(perm, 10)
+
+test_perm = split.pop(args.ver)
+ind = []
+for ary in split:
+    ind += list(ary)
+
+num_train = int(len(ind) * 0.96)
+rgb_train_keys = rgb_keys[ind[:num_train]]
+depth_train_keys = depth_keys[ind[:num_train]]
+
+rgb_val_keys = rgb_keys[ind[num_train:]]
+depth_val_keys = depth_keys[ind[num_train:]]
+
+rgb_test_keys = rgb_keys[test_perm]
+depth_test_keys = depth_keys[test_perm]
+num_train = len(rgb_train_keys)
+num_val = len(rgb_val_keys)
+num_test = len(rgb_test_keys)
+
+
 
 
 with open('/data/jun/pkls/RGBD-3/rgb-v3.pkl','wb') as f:

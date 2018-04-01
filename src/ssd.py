@@ -22,7 +22,6 @@ def SSD300(input_shape, num_classes=21):
     vgg16 = VGG16(weights='imagenet', include_top=False)
     weights = vgg16.get_weights()
     input_layer = Input(shape=input_shape)
-    print(weights[1].shape)
     # Block 1
     conv1_1 = Conv2D(64, (3, 3),
                      name='conv1_1',
