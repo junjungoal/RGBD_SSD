@@ -11,7 +11,7 @@ import tensorflow as tf
 import pickle
 import keras
 from ssd import SSD300
-from SSD_RGBD3 import RGBD_SSD300
+from rgbd_ssd import RGBD_SSD300
 from ssd_training import MultiboxLoss
 from ssd_utils import BBoxUtility
 from random import shuffle
@@ -20,7 +20,6 @@ import matplotlib.pyplot as plt
 import cv2
 from keras.utils import generic_utils
 from keras.callbacks import TensorBoard
-from SSD_tester import calc_detection_prec_rec, calc_detection_ap
 from keras.backend.tensorflow_backend import set_session
 from depth_preprocess import hole_filling
 import argparse
@@ -49,27 +48,13 @@ model = RGBD_SSD300(rgb_input_shape, depth_input_shape, num_classes=NUM_CLASSES)
 priors = pickle.load(open('../pkls/prior_boxes_ssd300.pkl', 'rb'))
 bbox_util = BBoxUtility(NUM_CLASSES, priors)
 
-rgb_gt = pickle.load(open('../pkls/SUNRGBD/RGB_v8.pkl', 'rb'))
-rgb_keys = sorted(rgb_gt.keys())
-depth_keys = sorted(depth_gt.keys())
-shuffle(rgb_keys)
-shuffle(depth_keys)
-num_train = int(round(0.8 * len(rgb_keys)))
-rgb_train_keys = rgb_keys[:num_train]
-depth_train_keys = depth_keys[:num_train]
-num_val = int(round((len(rgb_keys) - num_train)/2))
-rgb_val_keys = rgb_keys[num_train:]
-rgb_val_keys = rgb_val_keys[:num_val]
-depth_val_keys = depth_keys[num_train:]
-depth_val_keys = depth_val_keys[:num_val]
-
 rgb_gt = pickle.load(open('../pkls/RGB.pkl', 'rb'))
-depth_gt = pickle.load(open('../pkls/SUNRGBD/depth.pkl', 'rb'))
+depth_gt = pickle.load(open('../pkls/depth.pkl', 'rb'))
 
 rgb_keys = sorted(rgb_gt.keys())
 depth_keys = sorted(depth_gt.keys())
 rgb_keys = np.array(rgb_keys)
-depth_keys = np,array(depth_leys)
+depth_keys = np.array(depth_keys)
 
 perm = np.random.permutation(len(rgb_keys))
 split = np.split(perm, 10)
@@ -95,11 +80,6 @@ num_test = len(rgb_test_keys)
 
 
 
-with open('/data/jun/pkls/RGBD-3/rgb-v3.pkl','wb') as f:
-    pickle.dump(rgb_keys, f)
-
-with open('/data/jun/pkls/RGBD-3/depth-v3.pkl','wb') as f:
-    pickle.dump(depth_keys, f)
 
 
 
@@ -308,7 +288,7 @@ class Generator(object):
                     yield [np.array(tmp_rgb_inp), np.array(tmp_depth_inp)], [tmp_targets]
 
 
-path_prefix = '/data/jun/dataset/'
+path_prefix = '/raid/jun/dataset/'
 gen = Generator(rgb_gt, depth_gt, bbox_util, 16, path_prefix,
                 rgb_train_keys,depth_train_keys, rgb_val_keys, depth_val_keys,
                 (rgb_input_shape[0], rgb_input_shape[1]), (depth_input_shape[0], depth_input_shape[1]), do_crop=True)
@@ -341,11 +321,11 @@ def write_log(callback, names, losses, batch_no):
 
 #base_lr = 1e-4 v13, v14 
 base_lr = 1e-4
-optim = keras.optimizers.Adam(lr=base_lr)
+optim = keras.optimizers.SGD(lr=base_lr, decay=1e-4)
 model.compile(optimizer=optim,
               loss=MultiboxLoss(NUM_CLASSES, neg_pos_ratio=2.0).compute_loss,)
 
-log_path = '../tensor_log/estimation/RGBD-3/v3'
+log_path = "../tensor_log/RGBD/v{:d}".format(args.ver)
 callback = TensorBoard(log_path)
 callback.set_model(model)
 
@@ -354,8 +334,6 @@ callback.set_model(model)
 nb_epoch = 100
 batch_size = gen.batch_size
 epoch_length  = gen.train_batches//gen.batch_size
-#epoch_length  = 5
-#epoch_length  = 1500
 val_epoch_length = gen.val_batches//gen.batch_size
 losses = np.zeros((epoch_length))
 val_losses = np.zeros((val_epoch_length))
@@ -400,7 +378,7 @@ for epoch in range(nb_epoch):
             if curr_val_loss < best_val_loss:
                 print('Total loss decreased from {} to {}, saving weights'.format(best_val_loss,curr_val_loss))
                 best_val_loss = curr_val_loss
-                model.save_weights('/data/jun/checkpoints/SUNRGBD/estimation/RGBD-3/v3/weights.{epoch:02d}-{val_loss:.2f}.hdf5'.format(epoch=epoch, val_loss=best_val_loss))
+                model.save_weights('/raid/jun/checkpoints/bmvc/RGB/v{:d}/weights.best.hdf5'.format(args.ver))
             iter_num = 0
             break
 
