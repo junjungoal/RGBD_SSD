@@ -249,7 +249,7 @@ class Generator(object):
                 depth_img = imresize(depth_img, self.depth_image_size).astype('float32')
                 depth_img = depth_img / np.max(depth_img)
                 depth_img = np.sqrt(depth_img)
-                depth_img = np.array(depth_img*256, dtype=float)
+                depth_img = np.array(depth_img*255, dtype=float)
                 depth_img = hole_filling(depth_img)
                 #depth_img = depth_img.astype('float32')
  #               depth_img = np.uint8(depth_img)
@@ -378,7 +378,7 @@ for epoch in range(nb_epoch):
             if curr_val_loss < best_val_loss:
                 print('Total loss decreased from {} to {}, saving weights'.format(best_val_loss,curr_val_loss))
                 best_val_loss = curr_val_loss
-                model.save_weights('/raid/jun/checkpoints/bmvc/RGB/v{:d}/weights.best.hdf5'.format(args.ver))
+                model.save_weights('/raid/jun/checkpoints/bmvc/RGBD/v{:d}/weights.best.hdf5'.format(args.ver))
             iter_num = 0
             break
 
