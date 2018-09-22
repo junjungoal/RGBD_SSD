@@ -1,2 +1,4 @@
 logs/*
 tensor_log/*
+*.pyc
+src/__pycache__/*

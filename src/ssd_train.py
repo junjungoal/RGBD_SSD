@@ -244,7 +244,7 @@ gen = Generator(gt, bbox_util, 16, path_prefix,
                 (input_shape[0], input_shape[1]), do_crop=True)
 
 base_lr = 4e-4
-optim = keras.optimizers.SGD(lr=base_lr, momentum=0.9)
+optim = keras.optimizers.Adam(lr=base_lr)
 model.compile(optimizer=optim,
               loss=MultiboxLoss(NUM_CLASSES, neg_pos_ratio=2.0).compute_loss)
 

@@ -237,7 +237,7 @@ class Generator(object):
             rgb_inputs = []
             depth_inputs = []
             targets = []
-            for rgb_key, depth_key in zip(rgb_keys, depth_keys):            
+            for rgb_key, depth_key in zip(rgb_keys, depth_keys):
                 rgb_img_path = self.path_prefix + rgb_key
                 depth_img_path = self.path_prefix + depth_key
                 rgb_img = imread(rgb_img_path).astype('float32')
@@ -321,7 +321,7 @@ def write_log(callback, names, losses, batch_no):
 
 #base_lr = 1e-4 v13, v14 
 base_lr = 1e-4
-optim = keras.optimizers.SGD(lr=base_lr, decay=1e-4)
+optim = keras.optimizers.Adam(lr=base_lr)
 model.compile(optimizer=optim,
               loss=MultiboxLoss(NUM_CLASSES, neg_pos_ratio=2.0).compute_loss,)
 

@@ -12,6 +12,8 @@ class MatPreprocessor(object):
         self.rgb_data = dict()
         self.depth_data = dict()
         self.name_list = []
+        self.nyu_rgb_data = dict()
+        self.nyu_depth_data = dict()
         self._preprocess_mat()
 
     def _preprocess_mat(self):
@@ -46,6 +48,8 @@ class MatPreprocessor(object):
                 #        ymax = y_temp / height
                     class_name = klass[2]
                     bounding_box = [xmin, ymin, xmax, ymax]
+                    if 'NYU0011' in rgb_image_name:
+                        print(class_name)
                     one_hot_class = self._to_one_hot(class_name)
                     if one_hot_class is None:
                         continue
@@ -54,8 +58,9 @@ class MatPreprocessor(object):
                 if len(bounding_boxes) == 0:
                     continue
                 image_data = np.hstack((bounding_boxes, one_hot_classes))
-                print(rgb_image_name)
-                print(depth_image_name)
+                if 'NYU' in rgb_image_name:
+                    self.nyu_rgb_data[rgb_image_name] = image_data
+                    self.nyu_depth_data[depth_image_name] = image_data
                 self.rgb_data[rgb_image_name] = image_data
                 self.depth_data[depth_image_name] = image_data
 
@@ -101,7 +106,6 @@ class MatPreprocessor(object):
         elif name == 'toilet':
             one_hot_vector[18] = 1
         else:
-            print('unknown label: %s' %name)
             return None
         return one_hot_vector
 
@@ -115,6 +119,13 @@ import pickle
 preprocessed_data = MatPreprocessor(args.mat_path, args.dataset_path)
 rgb_data = preprocessed_data.rgb_data
 depth_data = preprocessed_data.depth_data
-pickle.dump(rgb_data, open('../pkls/RGB.pkl', 'wb'))
-pickle.dump(depth_data, open('../pkls/depth.pkl', 'wb'))
+
+nyu_rgb_data = preprocessed_data.nyu_rgb_data
+nyu_depth_data = preprocessed_data.nyu_depth_data
+
+pickle.dump(nyu_rgb_data, open('../pkls/nyu_RGB.pkl', 'wb'))
+pickle.dump(nyu_depth_data, open('../pkls/nyu_depth.pkl', 'wb'))
+
+#pickle.dump(rgb_data, open('../pkls/RGB.pkl', 'wb'))
+#pickle.dump(depth_data, open('../pkls/depth.pkl', 'wb'))
 
