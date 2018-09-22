@@ -238,7 +238,7 @@ def schedule(epoch, decay=0.9):
     return base_lr * decay**(epoch)
 
 
-path_prefix = '/raid/jun/dataset/'
+path_prefix = '/data/jun/dataset/'
 gen = Generator(gt, bbox_util, 16, path_prefix,
         train_keys, val_keys,
                 (input_shape[0], input_shape[1]), do_crop=True)
@@ -249,7 +249,7 @@ model.compile(optimizer=optim,
               loss=MultiboxLoss(NUM_CLASSES, neg_pos_ratio=2.0).compute_loss)
 
 tb_cb = keras.callbacks.TensorBoard(log_dir="../tensor_log/RGB/v{:d}/".format(args.ver))
-callbacks = [keras.callbacks.ModelCheckpoint('/raid/jun/checkpoints/bmvc/RGB/v{:d}/weights.best.hdf5'.format(args.ver),
+callbacks = [keras.callbacks.ModelCheckpoint('/data/jun/checkpoints/bmvc/RGB/v{:d}/weights.best.hdf5'.format(args.ver),
                                              verbose=1,
                                             save_best_only=True,
                                              save_weights_only=True),
