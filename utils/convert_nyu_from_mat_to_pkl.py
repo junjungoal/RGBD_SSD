@@ -1,4 +1,5 @@
 # coding: utf-8
+import os, sys
 import scipy.io
 import numpy as np
 import argparse
@@ -34,18 +35,14 @@ class MatPreprocessor(object):
                 width = float(img.shape[1])
                 for klass in data[1][0]:
                     for bbox in klass[1]:
-                        xmin = bbox[0] / width
-                        ymin = bbox[1] / height
-                        xmax = (bbox[2] + bbox[0]) / width
-                        ymax = (bbox[3] + bbox[1]) / height
-             #           x_temp = bbox[2] + bbox[0]
-              #          y_temp = bbox[3] + bbox[1]
-         #               if y_temp > height:
-          #                  y_temp = height
-           #             if x_temp > width:
-            #                x_temp = width
-               #         xmax = x_temp  / width
-                #        ymax = y_temp / height
+                        #xmin = int(bbox[0]) / width
+                        #ymin = int(bbox[1])/ height
+                        #xmax = (int(bbox[2]) +int(bbox[0])) / width
+                        #ymax = (int(bbox[3]) + int(bbox[1])) / height
+                        xmin = int(bbox[0])
+                        ymin = int(bbox[1])
+                        xmax = (int(bbox[2]) +int(bbox[0]))
+                        ymax = (int(bbox[3]) + int(bbox[1]))
                     class_name = klass[2]
                     bounding_box = [xmin, ymin, xmax, ymax]
                     if 'NYU0011' in rgb_image_name:
@@ -59,10 +56,10 @@ class MatPreprocessor(object):
                     continue
                 image_data = np.hstack((bounding_boxes, one_hot_classes))
                 if 'NYU' in rgb_image_name:
-                    self.nyu_rgb_data[rgb_image_name] = image_data
-                    self.nyu_depth_data[depth_image_name] = image_data
-                self.rgb_data[rgb_image_name] = image_data
-                self.depth_data[depth_image_name] = image_data
+                    self.nyu_rgb_data[os.path.join(path_prefix, rgb_image_name)] = image_data
+                    self.nyu_depth_data[os.path.join(path_prefix, depth_image_name)] = image_data
+                self.rgb_data[os.path.join(path_prefix, rgb_image_name)] = image_data
+                self.depth_data[os.path.join(path_prefix, depth_image_name)] = image_data
 
 
     def _to_one_hot(self, name):
@@ -123,8 +120,8 @@ depth_data = preprocessed_data.depth_data
 nyu_rgb_data = preprocessed_data.nyu_rgb_data
 nyu_depth_data = preprocessed_data.nyu_depth_data
 
-pickle.dump(nyu_rgb_data, open('../pkls/nyu_RGB.pkl', 'wb'))
-pickle.dump(nyu_depth_data, open('../pkls/nyu_depth.pkl', 'wb'))
+pickle.dump(nyu_rgb_data, open('/home/jun/projects/ssd_keras/pkls/nyu_RGB.pkl', 'wb'))
+pickle.dump(nyu_depth_data, open('/home/jun/projects/ssd_keras/pkls/nyu_depth.pkl', 'wb'))
 
 #pickle.dump(rgb_data, open('../pkls/RGB.pkl', 'wb'))
 #pickle.dump(depth_data, open('../pkls/depth.pkl', 'wb'))

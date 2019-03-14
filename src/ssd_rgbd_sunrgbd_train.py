@@ -32,8 +32,6 @@ config = tf.ConfigProto(
 )
 set_session(tf.Session(config=config))
 
-seed = 7
-np.random.seed(seed)
 
 voc_classes = ['bathtub', 'bed', 'bookshelf', 'box', 'chair', 'counter', 'desk', 'door', 'dresser',
                'garbage_bin', 'lamp', 'monitor', 'night_stand', 'pillow', 'sink', 'sofa', 'table', 'tv', 'toilet']
@@ -265,8 +263,8 @@ class Generator(object):
                     yield [np.array(tmp_rgb_inp), np.array(tmp_depth_inp)], [tmp_targets]
 
 
-path_prefix = '/raid/jun/dataset/'
-gen = Generator(rgb_gt, depth_gt, bbox_util, 32, path_prefix,
+path_prefix = '/media/hdd2/jun/dataset/'
+gen = Generator(rgb_gt, depth_gt, bbox_util, 16, path_prefix,
                 rgb_train_keys,depth_train_keys, rgb_val_keys, depth_val_keys,
                 (rgb_input_shape[0], rgb_input_shape[1]), (depth_input_shape[0], depth_input_shape[1]), do_crop=True)
 names = ['train_loss', 'val_loss']
@@ -318,7 +316,6 @@ iter_num = 0
 val_iter_num = 0
 best_loss = np.Inf
 best_val_loss = np.inf
-start_time = time.time()
 for epoch in range(nb_epoch):
     progbar = generic_utils.Progbar(epoch_length)
     print('Epoch {}/{}'.format(epoch + 1, nb_epoch))
@@ -355,8 +352,9 @@ for epoch in range(nb_epoch):
             if curr_val_loss < best_val_loss:
                 print('Total loss decreased from {} to {}, saving weights'.format(best_val_loss,curr_val_loss))
                 best_val_loss = curr_val_loss
-                model.save_weights('/raid/jun/checkpoints/bmvc/RGBD/SUNRGBD/weights.best.hdf5')
+                model.save_weights('/raid/jun/checkpoints/bmvc/RGBD/NYU/weights.best.hdf5')
             iter_num = 0
             break
 
 
+start_time = time.time()

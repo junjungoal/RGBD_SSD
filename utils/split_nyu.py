@@ -6,8 +6,8 @@ import argparse
 from keras.preprocessing import image
 import pickle
 
-rgb = pickle.load(open('../pkls/nyu_RGB.pkl', 'rb'))
-depth = pickle.load(open('../pkls/nyu_depth.pkl', 'rb'))
+rgb = pickle.load(open('/home/jun/projects/ssd_keras/pkls/nyu_RGB.pkl', 'rb'))
+depth = pickle.load(open('/home/jun/projects/ssd_keras/pkls/nyu_depth.pkl', 'rb'))
 
 split = scipy.io.loadmat('./splits.mat')
 train_index = split['trainNdxs']
@@ -30,7 +30,7 @@ for rgb_key, depth_key in zip(rgb_keys, depth_keys):
         test_depth[depth_key] = depth[depth_key]
 
 
-pickle.dump(train_rgb, open('../pkls/train_nyu_RGB.pkl', 'wb'))
-pickle.dump(train_depth, open('../pkls/train_nyu_depth.pkl', 'wb'))
-pickle.dump(test_rgb, open('../pkls/test_nyu_RGB.pkl', 'wb'))
-pickle.dump(test_depth, open('../pkls/test_nyu_depth.pkl', 'wb'))
+pickle.dump(train_rgb, open('/home/jun/projects/ssd_keras/pkls/train_nyu_RGB.pkl', 'wb'))
+pickle.dump(train_depth, open('/home/jun/projects/ssd_keras/pkls/train_nyu_depth.pkl', 'wb'))
+pickle.dump(test_rgb, open('/home/jun/projects/ssd_keras/pkls/test_nyu_RGB.pkl', 'wb'))
+pickle.dump(test_depth, open('/home/jun/projects/ssd_keras/pkls/test_nyu_depth.pkl', 'wb'))

@@ -1,0 +1,587 @@
+[W 17:13:18.555 NotebookApp] ipywidgets package not installed.  Widgets are unavailable.
+[W 17:13:18.558 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 17:13:18.561 NotebookApp] Serving notebooks from local directory: /home/jun/projects/RGBD-SSD/src
+[I 17:13:18.561 NotebookApp] 0 active kernels 
+[I 17:13:18.561 NotebookApp] The Jupyter Notebook is running at: http://[all ip addresses on your system]:9999/
+[I 17:13:18.561 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 17:13:25.052 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 9.01ms referer=http://131.113.37.99:9999/notebooks/NYUDataTester.ipynb
+[I 17:13:25.712 NotebookApp] Kernel started: c34763ed-99f7-49a7-9c7d-9cbd4845b2cc
+[I 17:13:26.158 NotebookApp] Adapting to protocol v5.1 for kernel c34763ed-99f7-49a7-9c7d-9cbd4845b2cc
+[I 17:13:28.104 NotebookApp] Copying NYUDataTester.ipynb to 
+[I 17:13:28.303 NotebookApp] Saving file at /NYUDataTester.ipynb
+[W 17:13:28.882 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.81ms referer=http://131.113.37.99:9999/notebooks/NYUDataTester-Copy1.ipynb
+[I 17:13:29.804 NotebookApp] Kernel started: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:13:30.165 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:15:29.889 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:18:00.256 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:18:00.756 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:19:30.005 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:28:45.301 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:28:46.114 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:28:46.498 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:28:46.548 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:28:59.071 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[W 17:28:59.077 NotebookApp] zmq message arrived on closed channel
+[I 17:28:59.438 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:29:29.854 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 17:30:30.310870: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 17:30:30.310888: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 17:30:30.310892: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 17:30:30.310896: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 17:30:30.310899: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 17:30:30.470921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 17:30:30.470959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 17:30:30.470966: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 17:30:30.470974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 17:30:33.689 NotebookApp] 302 GET / (220.181.159.77) 0.68ms
+2018-04-14 17:30:36.747845: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x3eb2620 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 17:30:36.748826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 17:30:36.961013: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x3f0d270 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 17:30:36.961993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 17:30:36.962014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 17:30:36.962388: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 17:30:36.962401: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 17:30:36.962418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 17:30:36.962434: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 17:30:36.962440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 17:30:36.962444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 17:30:36.962447: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 17:30:36.962454: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 17:30:36.962462: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 17:30:36.962467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 17:30:44.841097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 17:30:44.841119: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 17:30:44.841126: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 17:31:29.822 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:33:29.822 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:35:29.828 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:37:29.846 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:39:29.895 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:41:29.810 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:43:30.133 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 17:45:44.593196: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 17:47:29.848 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:49:21.774 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:49:22.114 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:49:29.831 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:51:29.809 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 17:51:58.059 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 17:52:37.481 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[W 17:54:26.159 NotebookApp] WebSocket ping timeout after 119947 ms.
+[W 17:54:29.440 NotebookApp] WebSocket ping timeout after 119712 ms.
+[W 17:54:46.506 NotebookApp] WebSocket ping timeout after 119987 ms.
+[W 17:58:26.867 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.86ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[W 17:58:42.160 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.80ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[W 17:58:43.378 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.88ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[W 17:58:59.656 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.71ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[I 17:59:12.063 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[W 17:59:12.379 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (103.5.140.177) 1.65ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[I 17:59:24.722 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 17:59:46.589041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 17:59:55.892082: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 17:59:55.892104: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 17:59:55.892111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 18:01:24.672 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:03:24.674 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:05:24.686 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:07:24.716 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:07:32.915 NotebookApp] Adapting to protocol v5.1 for kernel c34763ed-99f7-49a7-9c7d-9cbd4845b2cc
+[I 18:07:47.360 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:09:24.680 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:11:24.671 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:11:59.992 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:12:00.400 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:13:24.683 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:13:37.321 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:13:38.135 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:13:38.189 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:13:38.646 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 18:13:46.873107: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:13:46.873133: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:13:46.873138: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:13:46.873141: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:13:46.873144: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:13:47.062569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 18:13:47.062608: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 18:13:47.062615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 18:13:47.062623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 18:13:47.630519: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4a4b910 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:13:47.631475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:13:47.836466: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4a4f630 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:13:47.837483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:13:47.837505: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 18:13:47.837876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 18:13:47.837889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 18:13:47.837906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 18:13:47.837923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 18:13:47.837929: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 18:13:47.837932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 18:13:47.837936: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 18:13:47.837943: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:13:47.837948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:13:47.837952: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 18:13:56.365474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:13:56.365515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:13:56.365523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 18:14:34.172 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:14:44.989 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:14:45.393 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 18:14:55.845675: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:14:55.845698: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:14:55.845703: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:14:55.845707: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:14:55.845710: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:14:56.016790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 18:14:56.016827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 18:14:56.016834: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 18:14:56.016842: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 18:14:56.616300: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4e43c10 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:14:56.617843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:14:56.849916: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4e47840 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:14:56.850875: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:14:56.850896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 18:14:56.851269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 18:14:56.851281: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 18:14:56.851299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 18:14:56.851325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 18:14:56.851332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 18:14:56.851336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 18:14:56.851340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 18:14:56.851347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:14:56.851352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:14:56.851356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 18:15:05.084326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:15:05.084346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:15:05.084352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 18:15:25.719 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:17:24.679 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:19:24.697 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:19:51.148 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 18:19:51.541 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 18:19:59.504175: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:19:59.504199: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:19:59.504204: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:19:59.504208: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:19:59.504211: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 18:19:59.623529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 18:19:59.623554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 18:19:59.623560: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 18:19:59.623566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 18:20:00.112427: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4ed3520 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:20:00.113366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:20:00.310610: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4ed7240 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 18:20:00.311517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 18:20:00.311535: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 18:20:00.311884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 18:20:00.311894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 18:20:00.311910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 18:20:00.311925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 18:20:00.311931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 18:20:00.311934: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 18:20:00.311938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 18:20:00.311944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:20:00.311949: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:20:00.311954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 18:20:08.443704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 18:20:08.443725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 18:20:08.443731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 18:21:24.704 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:23:24.685 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:25:24.716 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:27:24.726 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:29:24.718 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 18:30:29.804 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[W 18:32:32.922 NotebookApp] WebSocket ping timeout after 119988 ms.
+[W 18:32:51.542 NotebookApp] WebSocket ping timeout after 119898 ms.
+[W 23:13:13.533 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20180414171318 (106.180.8.241) 1.73ms referer=http://131.113.37.99:9999/notebooks/ssd_evaluation.ipynb
+[I 23:13:14.143 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:14:19.801078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:14:30.411371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:14:30.411392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:14:30.411398: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:14:36.582 NotebookApp] Adapting to protocol v5.1 for kernel c34763ed-99f7-49a7-9c7d-9cbd4845b2cc
+[I 23:15:05.745 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:19:40.398576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 23:21:14.297 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:21:36.382761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 23:23:14.115 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:23:23.052 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:23:23.539 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:23:34.509833: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:23:34.509856: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:23:34.509861: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:23:34.509865: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:23:34.509868: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:23:34.689442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 23:23:34.689482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 23:23:34.689490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 23:23:34.689499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:23:35.202021: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x5897f70 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:23:35.203020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:23:35.418829: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x589bc90 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:23:35.419796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:23:35.419824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 23:23:35.420198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 23:23:35.420210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 23:23:35.420228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 23:23:35.420245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 23:23:35.420251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 23:23:35.420255: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 23:23:35.420259: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 23:23:35.420266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:23:35.420271: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:23:35.420276: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 23:24:01.936792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 23:25:14.065 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:27:19.235287: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:29:01.415080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:29:06.674725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 23:29:14.698 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:31:14.603 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:34:56.542917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+[I 23:35:14.051 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:41:14.148 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:41:25.121313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:41:25.121334: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:41:25.121341: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:43:14.623 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:45:14.146 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:45:33.574557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:45:33.574578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:45:33.574589: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 23:46:19.020489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:46:19.020511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:46:19.020521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:47:14.151 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:48:57.288 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[W 23:48:57.292 NotebookApp] zmq message arrived on closed channel
+[I 23:48:57.887 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:49:10.202760: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:49:10.202781: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:49:10.202786: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:49:10.202790: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:49:10.202793: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:49:10.321069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 23:49:10.321095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 23:49:10.321100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 23:49:10.321106: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:49:10.794644: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4df5770 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:49:10.795576: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:49:11.004676: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4df93a0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:49:11.005605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:49:11.005632: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 23:49:11.005986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 23:49:11.005997: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 23:49:11.006013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 23:49:11.006030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 23:49:11.006036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 23:49:11.006040: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 23:49:11.006043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 23:49:11.006050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:49:11.006055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:49:11.006059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:49:14.046 NotebookApp] Saving file at /ssd_evaluation.ipynb
+2018-04-14 23:49:18.922305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:49:18.922326: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:49:18.922332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:51:14.679 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:52:28.798 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:52:29.365 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:52:37.775753: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:52:37.775774: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:52:37.775779: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:52:37.775782: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:52:37.775786: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:52:37.896110: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 23:52:37.896136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 23:52:37.896149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 23:52:37.896156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:52:38.369178: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x4568090 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:52:38.370108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:52:38.579560: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x456ba10 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:52:38.580475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:52:38.580494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 23:52:38.580859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 23:52:38.580870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 23:52:38.580886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 23:52:38.580903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 23:52:38.580909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 23:52:38.580913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 23:52:38.580917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 23:52:38.580924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:52:38.580928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:52:38.580933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 23:52:46.826815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:52:46.826837: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:52:46.826843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:53:14.044 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:55:14.053 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:55:50.416 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:55:51.229 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:55:51.803 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:55:51.945 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:55:58.650 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:55:59.222 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:56:42.770 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:56:43.226 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:56:50.830 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:56:51.349 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:57:13.490 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:57:14.203 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:57:14.423 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:57:14.448 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:57:14.673 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:57:23.100540: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:57:23.100561: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:57:23.100566: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:57:23.100570: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:57:23.100573: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:57:23.220852: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 23:57:23.220879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 23:57:23.220884: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 23:57:23.220890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:57:23.758035: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x5ba0940 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:57:23.759675: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:57:24.023968: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x5ba42c0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:57:24.025554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:57:24.025591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 23:57:24.026131: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 23:57:24.026153: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 23:57:24.026197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 23:57:24.026228: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 23:57:24.026238: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 23:57:24.026245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 23:57:24.026251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 23:57:24.026263: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:57:24.026271: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:57:24.026279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 23:57:32.242705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:57:32.242726: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:57:32.242733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[I 23:58:27.722 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:35.341 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:36.154 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:36.969 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:37.783 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:37.983 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:38.083 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:38.222 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:38.345 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:41.201 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:43.729 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:44.547 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:44.743 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:45.002 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:47.046 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:47.362 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:47.581 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:48.261 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:50.499 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:51.014 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:54.082 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:56.424 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:56.903 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:58.510 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:58:59.165 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:04.460 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:06.589 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:07.043 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:10.400 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:12.509 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:13.084 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:14.050 NotebookApp] Saving file at /ssd_evaluation.ipynb
+[I 23:59:16.701 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:16.880 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:17.061 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:19.050 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:19.867 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:20.062 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:20.402 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.121 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.301 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.421 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.580 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.721 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:23.961 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:26.070 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:26.551 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:29.989 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:30.808 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:31.103 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:31.323 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:33.766 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:33.960 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:34.121 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:34.280 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:34.441 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:34.741 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:34.902 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:35.081 NotebookApp] Kernel interrupted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:37.029 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:37.846 NotebookApp] Kernel restarted: f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:37.993 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+[I 23:59:38.452 NotebookApp] Adapting to protocol v5.1 for kernel f3ffb297-fb89-486a-a2e1-b505ffa559ac
+2018-04-14 23:59:48.167330: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:59:48.167355: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:59:48.167360: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:59:48.167369: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:59:48.167373: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-04-14 23:59:48.346849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Quadro K420
+major: 3 minor: 0 memoryClockRate (GHz) 0.8755
+pciBusID 0000:01:00.0
+Total memory: 979.12MiB
+Free memory: 970.38MiB
+2018-04-14 23:59:48.346889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 1 
+2018-04-14 23:59:48.346896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   Y 
+2018-04-14 23:59:48.346905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0)
+2018-04-14 23:59:48.864355: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x513ec60 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:59:48.865352: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:03:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:59:49.080759: W tensorflow/stream_executor/cuda/cuda_driver.cc:523] A non-primary context 0x51425e0 exists before initializing the StreamExecutor. We haven't verified StreamExecutor works with that.
+2018-04-14 23:59:49.081746: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 2 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:04:00.0
+Total memory: 11.92GiB
+Free memory: 11.81GiB
+2018-04-14 23:59:49.081768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 0 and 1
+2018-04-14 23:59:49.082142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 0
+2018-04-14 23:59:49.082155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 1 and 2
+2018-04-14 23:59:49.082173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:847] Peer access not supported between device ordinals 2 and 1
+2018-04-14 23:59:49.082194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 1 2 
+2018-04-14 23:59:49.082201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y N Y 
+2018-04-14 23:59:49.082205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 1:   N Y N 
+2018-04-14 23:59:49.082208: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 2:   Y N Y 
+2018-04-14 23:59:49.082215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:59:49.082220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:59:49.082225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+2018-04-14 23:59:57.551804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0)
+2018-04-14 23:59:57.551828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1032] Ignoring gpu device (device: 1, name: Quadro K420, pci bus id: 0000:01:00.0) with Cuda multiprocessor count: 1. The minimum required count is 8. You can adjust this requirement with the env var TF_MIN_GPU_MULTIPROCESSOR_COUNT.
+2018-04-14 23:59:57.551841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:1) -> (device: 2, name: GeForce GTX TITAN X, pci bus id: 0000:04:00.0)
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
+[IPKernelApp] WARNING | Parent appears to have exited, shutting down.
